@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<A name=top>
+<table class=TABLEX width=100%>
+	<tr>
+		<td colspan=4 class=TDX>Apache Log Report</td>
+	</tr>
+	<tr>
+		<td width=25%>&nbsp;</td>
+		<td class=TDHEADER>Report Name</td>
+		<td class=TDHEADER>Report Date</td>
+		<td width=25%>&nbsp;</td>
+	</tr>
+	<tr>
+		<td width=25%>&nbsp;</td>
+		<td class=TDLEFT>%% REPORT_NAME %%</td>
+		<td class=TDLEFT>%% REPORT_DATE %%</td>
+		<td width=25%>&nbsp;</td>
+	</tr>
+</table>
+<p>
+<center>
+<a href=#summary>Summary</a> |
+<a href=#files>Accessed Files</a> |
+<a href=#pages>Accessed Pages</a> |
+<a href=#hosts>Hosts</a> |
+<a href=#access_methods>Access Method</a> | 
+<a href=#search_engines>Search Engines</a> |
+<a href=#file_types>File Types</a> |
+<a href=#status>Status</a> |
+<a href=#errors>Errors</a>
+<br>
+<a href=#daily>Daily</a> |
+<a href=#hourly>By Hour</a> |
+<a href=#dow>By Day</a> |
+<a href=#countries>Countries</a> |
+<a href=#browser>Browsers</a> |
+<a href=#os>Operating Systems</a> |
+<a href=#robots>Robots</a>
+</center>
+<p>
+<A name=summary>
+<table class=TABLEX width=100%>
+	<tr>
+		<td class=TDX>Summary
+		</td>
+	</tr>
+	<tr>
+		<td align=center>%% SUMMARY_TABLE %%
+		</td>
+	</tr>
+</table>
+<p>
+
+<A name=files>
+<A name=pages>
+<table class=TABLEX width=100%>
+	<tr>
+		<td class=TDX colspan=2>Accessed Pages / Files
+		</td>
+	</tr>
+	<tr>
+		<td align=center>%% PAGES_TABLE %%
+		</td>
+		<td align=center>%% FILES_TABLE %%
+		</td>
+	</tr>
+</table>
+
+<p>
+<A name=hosts>
+<table class=TABLEX width=100%>
+	<tr>
+		<td class=TDX>Hosts
+		</td>
+	</tr>
+	<tr>
+		<td align=center>%% HOSTS_TABLE %%
+		</td>
+	</tr>
+</table>
+<p>
+<A name=access_methods>
+<table class=TABLEX width=100%>
+	<tr>
+		<td class=TDX colspan=2>Access Method
+		</td>
+	</tr>
+	<tr>
+		<td valign=top align=center>%% ACCESS_METHOD_TABLE %%</td>
+		<td valign=top align=center>%% EXTERNAL_LINKS_TABLE %%</td>
+	</tr>
+</table>
+<p>
+<A name=search_engines>
+<table class=TABLEX width=100%>
+	<tr>
+		<td class=TDX colspan=3>Search Engine Report
+		</td>
+	</tr>
+	<tr>
+		<td valign=top align=center>%% SEARCH_ENGINES_TABLE %%</td>
+		<td valign=top align=center>%% SEARCH_PHRASES_TABLE %%</td>
+		<td valign=top align=center>%% SEARCH_KEYWORDS_TABLE %%</td>
+	</tr>
+</table>
+<p>
+<A name=file_types>
+<table class=TABLEX width=100%>
+	<tr>
+		<td class=TDX colspan=2>File Types
+		</td>
+	</tr>
+	<tr>
+		<td align=center>%% FILE_TYPES_TABLE %%
+		</td>
+		<td align=center>%% FILE_TYPES_CHART %%
+		</td>
+	</tr>
+</table>
+<p>
+<A name=status>
+<table class=TABLEX width=100%>
+	<tr>
+		<td class=TDX>HTTP Status
+		</td>
+	</tr>
+	<tr>
+		<td align=center>%% STATUS_CODES_TABLE %%
+		</td>
+	</tr>
+</table>
+<p>
+<A name=errors>
+<table class=TABLEX width=100%>
+	<tr>
+		<td class=TDX>Errors
+		</td>
+	</tr>
+	<tr>
+		<td align=center>%% ERRORS_TABLE %%
+		</td>
+	</tr>
+</table>
+<p>
+<A name=daily>
+<table class=TABLEX width=100%>
+	<tr>
+		<td class=TDX>Daily Log
+		</td>
+	</tr>
+	<tr>
+		<td align=center>%% DAILY_LOG_CHART %%
+		</td>
+	</tr>
+	<tr>
+		<td align=center>%% DAILY_LOG_TABLE %%
+		</td>
+	</tr>
+</table>
+<p>
+<A name=hourly>
+<table class=TABLEX width=100%>
+	<tr>
+		<td class=TDX>By Hour
+		</td>
+	</tr>
+	<tr>
+		<td align=center>%% BY_HOUR_CHART %%
+		</td>
+	</tr>
+	<tr>
+		<td align=center>%% BY_HOUR_TABLE %%
+		</td>
+	</tr>
+</table>
+<p>
+<A name=dow>
+<table class=TABLEX width=100%>
+	<tr>
+		<td class=TDX colspan=2>By Day
+		</td>
+	</tr>
+	<tr>
+		<td align=center>%% BY_DAY_TABLE %%
+		</td>
+		<td align=center>%% BY_DAY_CHART %%
+		</td>
+	</tr>
+</table>
+<p>
+
+<A name=countries>
+<table class=TABLEX width=100%>
+	<tr>
+		<td class=TDX>Countries
+		</td>
+	</tr>
+	<tr>
+		<td align=center>%% COUNTRY_CHART %%</td>
+	</tr>
+	<tr>
+		<td valign=top align=center>%% COUNTRY_TABLE %%</td>
+	</tr>
+</table>
+
+
+<A name=browser>
+<table class=TABLEX width=100%>
+	<tr>
+		<td class=TDX colspan=2>Browser Versions
+		</td>
+	</tr>
+	<tr>
+		<td valign=top align=center>%% BROWSER_VERSION_TABLE %%</td>
+		<td align=center>%% BROWSER_VERSION_CHART %%</td>
+	</tr>
+</table>
+<p>
+<A name=os>
+<table class=TABLEX width=100%>
+	<tr>
+		<td class=TDX colspan=2>Operating Systems
+		</td>
+	</tr>
+	<tr>
+		<td align=center>%% OPERATING_SYSTEMS_TABLE %%
+		</td>
+		<td align=center>%% OPERATING_SYSTEMS_CHART %%
+		</td>
+	</tr>
+</table>
+<p>
+<A name=robots>
+<table class=TABLEX width=100%>
+	<tr>
+		<td class=TDX>Robots
+		</td>
+	</tr>
+	<tr>
+		<td align=center>%% ROBOTS_TABLE %%
+		</td>
+	</tr>
+</table>
+

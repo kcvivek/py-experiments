@@ -1,0 +1,67 @@
+
+In order to use this version of Scratchy there are several installation dependencies.
+
+Deprecated from pre-0.8 versions:
+================================
+   - GDChart (which has been replaced in favor of ChartDirector)
+   - Many complex internal data structures have been replaced with a SQL database
+   - Country Lookups via http (replaced with a GeoIP database)
+
+Prequisites:
+============
+
+   - MySQL - www.mysql.com (v4.0 or later recommended)
+   - MySQLdb - http://sourceforge.net/projects/mysql-python
+
+  (future versions of Scratchy may support pySQLlite and/or Gadfly 
+   in addition to MySQL.  Preliminary support is included but it should
+   be considered very experimental until officially supported)
+
+Optional (and recommended):
+==========================
+ 
+   - ChartDirector v3.0 Python API - www.advsofteng.com/
+   - GeoIP C API - http://www.maxmind.com/app/opensource
+   - GeoIP Python API - http://www.maxmind.com/app/opensource
+
+#######################################################################
+
+Installation:
+============
+
+1. Obtain, install and configure MySQL as necessary.  You will need a server
+   and a client.  Ensure that you have a user setup that can create and drop
+   a database, among other privs.  This is necessary for the scripts included 
+   with Scratchy to be able to create a database and tables for data storage.
+   
+2. Obtain and install the Python MySQLdb package.
+
+3. If desired, obtain and install the ChartDirector Python package.
+   If you would like to have the Scratchy report process to create
+   charts of the Apache log data then you need this package (ealier
+   versions of Scratchy used gdchart but I have abandoned that in
+   favor of the easier to use/install ChartDirector product).
+   
+   a) ChartDirector's trial version included a yellow banner at
+      the bottom of each chart.  The fine folks at Advanced Software Engineering
+      have created a replace library for the Scratchy project which 
+      replaces this yellow banner with a less obtrusive, transparent 
+      banner that is specific to the Scratchy project.  You can
+      download the Linux/Windows replacement library (.so or DLL)
+      from the Scratchy project page on Sourceforge.
+
+4. If desired, install the C and Python GeoIP API's.
+   If you would like "ip to country" data included in your reports you
+   need these packages.  Earlier versions of Scratchy relied on an
+   http service which is no longer active.  The MaxMind GeoIP product
+   is much faster (since the data is stored locally in a DAT file) then
+   accessing this information over a network.
+   a) You may wish to obtain the latest .DAT file from MaxMind as well 
+      (this file has the latest ip address to country data)
+
+5. Create a Scratchy configuration file.  See Scratchy website for details.
+
+6. Run Scratchy:
+
+parse.py -c your_config_file apache_access_log1 apache_access_log2 ... apache_access_logN
+

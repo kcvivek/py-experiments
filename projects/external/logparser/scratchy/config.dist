@@ -1,0 +1,63 @@
+#
+# The log file to parse by default.
+# This can be overridden on the cmd line using
+# the -f flag.
+
+ACCESS_LOG: /var/log/apache/access_log
+
+#
+# A 'hit' is any file that is retrieved from your server.
+# A 'page' is any document type.
+# use KNOWN_PAGES to records 'page' counts of documents
+# of interest to you. 
+
+KNOWN_PAGES: html, cgi
+
+#
+# List the names that your server is known as.
+# This is used to differentiate internal and external
+# redirects
+
+KNOWN_ALIASES: www.yourdomain.com, yourdomain.com, etc...
+
+#
+# Path where data will be written to 
+
+DATA_DIR: data
+
+#
+# Path where HTML reports will be written to
+
+REPORT_DIR: reports
+
+# 
+# DATA_NAME is a subdir of DATA_DIR and REPORT_DIR
+# Each server that you monitor should have a unique
+# DATA_NAME such that data and reports will be
+# compiled separately
+
+DATA_NAME: yourdomain
+
+# DATABASE must be one of the following:    
+#   mysql   
+#   sqlite
+#
+
+DATABASE: mysql
+
+# if DATABASE type is mysql, then these options should be specified accordingly.
+#
+MYSQL_USERNAME: mysql_username
+MYSQL_PASSWORD: mysql_password
+MYSQL_HOST: localhost
+MYSQL_PORT: 3306
+
+
+# if DATABASE type is sqlite then the following option can be used (default is scratchydb)
+#
+#SQLITE_DB: sqlite_database_name
+
+
+
+# OTHER OPTIONS can go here.  See http://scratchy.sourceforge.net for a complete
+# list of options that are supported.
